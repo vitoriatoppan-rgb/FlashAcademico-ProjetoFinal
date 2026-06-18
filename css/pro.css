@@ -1,0 +1,373 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+.topo{
+    background:#1f5ca2;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+.topo h1{
+    font-size:40px;
+}
+
+footer{
+    padding: 1rem;
+    background-color: #1f5ca2;
+    color: white;
+    text-align: center;
+} 
+
+footer img{
+    gap: 40px;
+    padding: 15px;
+    width: 120px;
+}
+
+#imgsesi{
+    width: 160px;
+}
+
+.planos{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:50px;
+}
+
+.card{
+    background:white;
+    width: 400px;
+    height: 500px;
+    border-radius: 25px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.gratis{
+    border-top:15px solid #6c757d;
+    border-bottom:10px solid #6c757d;
+    background-color: #cdcdcd;
+}
+
+.gratis button {
+    background:#2a83d1;
+    color:white;
+    border:none;
+    padding:15px 28px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.gratis button:hover{
+    background: #2972c6;
+}
+
+.pro{
+    border-top:10px solid #0565d3;
+    border-bottom:10px solid#0565d3;
+    background-color: #c6d2de;
+}
+
+.pro h2{
+    color: #1e518c;
+}
+
+.pro button {
+    background:#0565d3;
+    color:white;
+    border:none;
+    padding:15px 28px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.pro button:hover{
+    background: #1e518c;
+}
+
+.premium{
+    border-top:15px solid #06144b;
+    border-bottom:10px solid #06144b;
+    background-color:#c6cade;;
+}
+
+.premium h2{
+    color: #021253;
+}
+
+.premium button {
+    background: #021253;
+    color:white;
+    border:none;
+    padding:15px 28px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.premium button:hover{
+    background: #020c34;
+}
+
+.card h2{
+    margin-bottom:15px;
+    font-size: 30px;
+    font-weight:bold;
+}
+
+.preco{
+    font-size:35px;
+    font-weight:bold;
+    margin:20px 0;
+}
+
+.card ul{
+    list-style:none;
+    margin:20px 0;
+}
+
+.card li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.card ul li{
+    margin:10px 0;
+    font-size: 20px;
+}
+
+.verde{
+    color: #058b09;
+}
+
+.vermelho{
+    color: #b60000;
+}
+
+
+:root{
+    --primary:#60a5fa;
+    --primary-dark:#3b82f6;
+    --border:rgba(255,255,255,.08);
+}
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0b1120;
+}
+
+/* NAVBAR */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 40px;
+
+    background:rgba(10,15,25,.9);
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid var(--border);
+
+    z-index:1000;
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.logo{
+    height:45px;
+}
+
+.menu-toggle{
+    background:none;
+    border:none;
+    color:white;
+    font-size:2rem;
+    cursor:pointer;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.nav-right a{
+    color:white;
+    text-decoration:none;
+}
+
+.login-btn{
+    border:2px solid var(--primary);
+    padding:10px 22px;
+    border-radius:12px;
+}
+
+.cadastro-btn{
+    background:var(--primary);
+    padding:10px 22px;
+    border-radius:12px;
+}
+
+/* DROPDOWN */
+
+.materias-dropdown{
+    position:relative;
+}
+
+.dropdown{
+    display:none;
+
+    position:absolute;
+    top:100%;
+    right:0;
+
+    min-width:220px;
+
+    background:#111827;
+
+    border-radius:12px;
+
+    padding:10px 0;
+}
+
+.materias-dropdown:hover .dropdown{
+    display:block;
+}
+
+.dropdown li{
+    list-style:none;
+}
+
+.dropdown a{
+    display:block;
+    padding:12px 20px;
+}
+
+/* MENU LATERAL */
+.menu-toggle{
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu{
+    position: fixed;
+    top: 80px;
+    left: -320px;
+
+    width: 320px;
+    height: calc(100vh - 80px);
+
+    background: #111827;
+
+    padding: 40px;
+
+    transition: .3s;
+
+    z-index: 10001;
+}
+
+.menu.active{
+    left: 0;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.menu a{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: block;
+    padding: 8px 0;
+}
+
+.dropdown-header{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submenu{
+    display: none;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.submenu li{
+    margin-bottom: 20px;
+}
+
+.submenu a{
+    font-size: 1.5rem;
+    color: #d1d5db;
+}
+
+.dropdown-item.active .submenu{
+    display: block;
+}
+
+.overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.5);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: .3s;
+
+    z-index: 10000;
+}
+
+.overlay.active{
+    opacity: 1;
+    visibility: visible;
+}

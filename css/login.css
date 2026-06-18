@@ -1,0 +1,331 @@
+
+
+
+:root{
+    --primary:#60a5fa;
+    --primary-dark:#3b82f6;
+    --border:rgba(255,255,255,.08);
+}
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0b1120;
+}
+
+/* NAVBAR */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    height:80px;
+      width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 40px;
+
+    background:rgba(10,15,25,.9);
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid var(--border);
+
+    z-index:1000;
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+
+.login{
+     width: 80px;
+    display:block;
+}
+.menu-toggle{
+    background:none;
+    border:none;
+    color:white;
+    font-size:2rem;
+    cursor:pointer;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-right: 80px;
+}
+
+.nav-right a{
+    color:white;
+    text-decoration:none;
+}
+
+.login-btn{
+    border:2px solid var(--primary);
+    padding:10px 22px;
+    border-radius:12px;
+}
+
+.cadastro-btn{
+    background:var(--primary);
+    padding:10px 22px;
+    border-radius:12px;
+}
+
+/* DROPDOWN */
+
+.materias-dropdown{
+    position:relative;
+}
+
+.dropdown{
+    display:none;
+
+    position:absolute;
+    top:100%;
+    right:0;
+
+    min-width:220px;
+
+    background:#111827;
+
+    border-radius:12px;
+
+    padding:10px 0;
+}
+
+.materias-dropdown:hover .dropdown{
+    display:block;
+}
+
+.dropdown li{
+    list-style:none;
+}
+
+.dropdown a{
+    display:block;
+    padding:12px 20px;
+}
+
+/* MENU LATERAL */
+.menu-toggle{
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu{
+    position: fixed;
+    top: 80px;
+    left: -320px;
+
+    width: 320px;
+    height: calc(100vh - 80px);
+
+    background: #111827;
+
+    padding: 40px;
+
+    transition: .3s;
+
+    z-index: 10001;
+}
+
+.menu.active{
+    left: 0;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+    
+
+.menu a{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: block;
+    padding: 8px 0;
+}
+
+.dropdown-header{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submenu{
+    display: none;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.submenu li{
+    margin-bottom: 20px;
+}
+
+.submenu a{
+    font-size: 1.5rem;
+    color: #d1d5db;
+}
+
+.dropdown-item.active .submenu{
+    display: block;
+}
+
+.overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.5);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: .3s;
+
+    z-index: 10000;
+}
+
+.overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* layout principal */
+.banner {
+    display: flex;
+
+    width: 100%;
+    min-height: 100vh;
+
+    margin-bottom: 0;
+}
+
+/* imagem lateral */
+.bannercadastro {
+    width: 50%;
+}
+
+.bannercadastro img {
+    width: 100%;
+    height: 100vh;
+
+    object-fit: cover;
+}
+
+ /* área de login */
+.cadastro {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 40px;
+
+    background: #f4f4f4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* logo */
+.logo {
+    width: 130px;
+    height: 80px;
+    justify-content: center;
+    text-align: center;
+}
+
+/* titulo */
+.cadastro h4 {
+    font-size: 29px;
+
+    margin-bottom: 40px;
+
+    text-align: center;
+    color: #646464;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* formulário */
+.cadastro form {
+    width: 70%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.cadastro input {
+    height: 50px;
+
+    padding: 0 20px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: #d9d9d9;
+
+    font-size: 16px;
+    color: #717171;
+
+    outline: none;
+}
+
+/* botão cadastro*/
+.cadastro button {
+    width: 100%;
+    height: 50px;
+
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: linear-gradient(
+        to right,
+        #5ca3eb,
+        #2f6db5
+    );
+
+    color: white;
+    font-size: 16px;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.234);
+}
+
+.cadastro button:hover {
+    opacity: 0.9;
+}
+#senha{
+    color: #2f6db5;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+/* responsividade */   
+@media (max-width: 768px) {
+
+    .bannercadastro,
+    .bannercadastro img {
+        display: none;
+    }
+
+    .cadastro {
+        width: 100%;
+    }
+}

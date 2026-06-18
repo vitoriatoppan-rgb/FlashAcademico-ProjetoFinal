@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Acadêmico - Sugestões</title>
+    <link rel="icon" type="image/png" href="../img/logoazul.png">
+    <link rel="stylesheet" href="../css/sugestao.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+
+        <div class="nav-left">
+            <button id="menu-toggle" class="menu-toggle">
+                ☰
+            </button>
+
+            <a href="../index.html"><img src="../img/logobranca.png" alt="Logo" class="login"></a>
+        </div>
+
+        <div class="nav-right">
+
+            <a href="IA.html">Eva IA</a>
+
+            <a href="../index.html#noticias">Notícias</a>
+
+            <div class="materias-dropdown">
+
+                <a href="#">
+                    Matérias
+                </a>
+
+                <ul class="dropdown">
+                    <a href="matematica.html">Matemática</a>
+                    <a href="portugues.html">Português</a>
+                    <a href="fisica.html">Física</a>
+                    <a href="quimica.html">Química</a>
+                    <a href="biologia.html">Biologia</a>
+                    <a href="geografia.html">Geografia</a>
+                    <a href="redacao.html">Redação</a>
+                    <a href="historia.html">História</a>
+                    <a href="atualidades.html">Atualidades</a>
+                    <a href="filosofia.html">Filosofia</a>
+                    <a href="sociologia.html">Sociologia</a>
+                    <a href="ingles.html">Inglês</a>
+
+                </ul>
+
+            </div>
+
+            <a href="login.html" class="login-btn">Login</a>
+
+            <a href="cadastro.html" class="cadastro-btn">Cadastro</a>
+
+        </div>
+
+    </nav>
+</header>
+
+<div class="overlay" id="overlay"></div>
+    <ul class="menu" id="menu">
+        <li class="dropdown-item">
+
+            <div class="dropdown-header">
+                <span>Suporte</span>
+            </div>
+
+            <ul class="submenu">
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="sugestao.html">Sugestões</a></li>
+            </ul>
+
+        </li>
+    </ul>
+</div>
+
+    <article class="banner">
+        <aside class="sugestao">
+            <img src="../img/logoazul.png" alt="Logo Flash Academico" id="logo" class="logo">
+            <br>
+            <h4>Deixe sua sugestão</h4>
+            <form id="sugestaoForm">
+                <input type="text" id="text" placeholder="Seu email" required>
+                <textarea id="textarea" placeholder="Sua sugestão" required></textarea>
+                <p id="mensagem"></p>   
+                <a href="../index.html"><button type="submit">Enviar</button></a>
+            </form>
+        </aside>
+         <section class="bannersugestao">
+           <h2>Sua sugestão é bem-vinda aqui!</h2>
+        </section>
+    </article>
+    <script src="../js/script.js" defer></script>
+</body>
+</html>
